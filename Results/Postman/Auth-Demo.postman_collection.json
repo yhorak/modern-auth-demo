@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "2110a9cd-5d0c-47cf-afbd-34707f41af20",
+		"name": "Auth Demo 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check Secured API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8"
+					},
+					{
+						"key": "Cookie",
+						"value": ".AspNetCore.Identity.Application=CfDJ8PUbHiH_OJpDkwtbe4fbRoYjwbxkD4O59DYBSqgApXjWYvGsM63k9ww4PcjKfTGXMUHK-pSBacJn43-weScf8aMyRkwtWAyfU0-3IN6LWF6kefizH_V-v7HbZmLh50RjDo60nXYiGx6z5fq5xdNMo9_OyWui4sviImg12ZxQrMyTC07jwLwXNyq25tXdAq91-UIj39vb97qk8crOxsC6BxwVJyMTKERi8oAH8zS3B7qXQVxKvvfmf_bhle26UY5lVT7EnqKefCF2DcnMdh7d_InFZzNydWYi04QaoE915ZMUkutFmVgvwLzD69hTnU1FpFGuEf3PIz3o1ksaEfPNCF6suf_SexpX9_z333oxb65X0jonYRFq3maJnArLjyWhw5IfuMlPqLcWeWYgNuSEhJhqvqXMwcOjOYRdPy85pxUy0dA67Us5_aLRGe-jDyVHn22R0BEepA8EfcRd_ltehhLud3_TO9nEWgUqNkMqWZsod0Nme96yWQVvUooo5HoHuECSXBUeieRrtrEciFa6_Nl-AZZ-I_5tqnI7omQbi1dw_lquHvE5XZco7C_MUPBjSLyVIMTakvoPMMWjCsXbUpQ; path=/; secure; samesite=lax; httponly",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Cookie",
+						"value": ".AspNetCore.Identity.Application=CfDJ8PUbHiH_O",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"type\": \"Message\",\r\n  \"id\": \"79e08c8cc0ab47e4afe3d9fbc60cba62\",\r\n  \"conversationId\": \"8a684db8\",\r\n  \"created\": \"2016-06-13T12:55:56.5174605Z\",\r\n  \"language\": \"en-GB\",\r\n  \"text\": \"lol\",\r\n  \"attachments\": [],\r\n  \"from\": {\r\n    \"name\": \"User1\",\r\n    \"channelId\": \"emulator\",\r\n    \"address\": \"User1\",\r\n    \"id\": \"2c1c7fa3\",\r\n    \"isBot\": false\r\n  },\r\n  \"to\": {\r\n    \"name\": \"unTill-Host-Bot\",\r\n    \"channelId\": \"emulator\",\r\n    \"address\": \"unTill-Host-Bot\",\r\n    \"id\": \"unTill-Host-Bot\",\r\n    \"isBot\": true\r\n  },\r\n  \"participants\": [\r\n    {\r\n      \"name\": \"User1\",\r\n      \"channelId\": \"emulator\",\r\n      \"address\": \"User1\",\r\n      \"id\": \"2c1c7fa3\",\r\n      \"isBot\": false\r\n    },\r\n    {\r\n      \"name\": \"unTill-Host-Bot\",\r\n      \"channelId\": \"emulator\",\r\n      \"address\": \"unTill-Host-Bot\",\r\n      \"id\": \"unTill-Host-Bot\",\r\n      \"isBot\": true\r\n    }\r\n  ],\r\n  \"totalParticipants\": 2,\r\n  \"mentions\": [],\r\n  \"channelMessageId\": \"cb36cafd9f47494c9d64274ade6d81e0\",\r\n  \"channelConversationId\": \"Conv1\",\r\n  \"hashtags\": []\r\n}"
+				},
+				"url": {
+					"raw": "https://{{individual-host}}/api/secure",
+					"protocol": "https",
+					"host": [
+						"{{individual-host}}"
+					],
+					"path": [
+						"api",
+						"secure"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
